@@ -1,0 +1,83 @@
+/* mobile */
+@media(max-width:860px) {
+
+    section {
+        padding: 10vh 2vw 2vh
+    }
+
+    /* nav */
+    .mid_anchor,
+    .right_anchor {
+        display: none;
+    }
+
+    .burger {
+        display: grid;
+    }
+
+    #burger_menu:checked~.hidden_menu {
+        display: flex;
+    }
+
+    /* hero/intro */
+    .hero {
+        min-height: 50vh;
+    }
+
+    .intro .chips {
+        grid-column: 1/-1
+    }
+
+    /* cv */
+    #cv section .contenu {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+    }
+
+    #cv section {
+        padding: 0;
+    }
+
+    #cv section .contenu figure img {
+        object-fit: contain;
+        height: 100%;
+    }
+
+    #cv section .contenu figure {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*  */
+    #competences .contenu {
+        padding-inline: auto;
+    }
+
+    #competences .contenu .grille {
+        grid-template-columns: 1fr
+    }
+
+    #competences .contenu .grille .boite.grande {
+        grid-column: auto
+    }
+
+    /*  */
+
+    .blog-contenu .shots {
+        grid-template-columns: 1fr
+    }
+
+    .blog-contenu .post {
+        grid-template-columns: 1fr
+    }
+
+    .blog-contenu ol.frise {
+        padding: 0;
+    }
+
+
+    #contact .grille {
+        grid-template-columns: 1fr;
+    }
+
+}

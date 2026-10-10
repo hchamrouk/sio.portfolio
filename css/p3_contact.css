@@ -1,0 +1,82 @@
+/* contact */
+
+#contact .grille {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+}
+
+#contact .grille div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    color: var(--mut);
+}
+
+#contact .grille div a {
+    padding: 12px 22px;
+
+    border-radius: 28px;
+
+    background: var(--ink);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 500
+}
+
+#contact .grille form {
+    display: grid;
+    gap: 14px;
+    padding: 28px;
+
+    border-radius: 28px;
+    background: var(--bg);
+}
+
+#contact .grille form label {
+    display: grid;
+    gap: 4px;
+    font-weight: 500;
+}
+
+#contact .grille form label select,
+#contact .grille form label input[type=email],
+#contact .grille form label textarea {
+    padding: 13px 16px;
+    resize: none;
+
+    border-radius: 14px;
+    border: 1px solid var(--ink);
+    outline: 0px solid var(--ink);
+    background: transparent;
+    font: inherit;
+    color: var(--ink);
+
+}
+
+#contact .grille form label select:focus,
+#contact .grille form label input[type=email]:focus,
+#contact .grille form label textarea:focus {
+    outline-width: 2px;
+}
+
+#contact .grille form label select::placeholder,
+#contact .grille form label input[type=email]::placeholder,
+#contact .grille form label textarea::placeholder,
+#contact .grille form label select:invalid,
+#contact .grille form label select option:disabled {
+    color: var(--mut);
+}
+
+#contact .grille form label select option {
+    color: var(--ink);
+}
+
+#contact .grille form .btn {
+    border-radius: 14px;
+}

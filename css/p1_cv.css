@@ -1,0 +1,70 @@
+/* cv */
+
+/* selection des langues */
+
+#cv section:has(#cv_lang_fr:checked) .contenu .en,
+#cv section:has(#cv_lang_en:checked) .contenu .fr {
+    display: none;
+}
+
+/* #cv section .lang label:has(input:checked) {
+    background: var(--ink);
+    color: var(--bg);
+} */
+
+/* contenu du cv */
+#cv section .contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+
+    max-width: min(1100px, 100%);
+    margin-inline: auto;
+    padding: 5vw;
+
+    border: 1px solid var(--line);
+    border-radius: 36px;
+    background: var(--card);
+}
+
+/* figure (autoportrait) */
+#cv section .contenu figure {
+    position: relative;
+    color: var(--ink);
+}
+
+#cv section .contenu figcaption {
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: .03em
+}
+
+#cv section .contenu img {
+    width: 100%;
+}
+
+/* infos */
+#cv section .contenu>div div {
+    margin-bottom: 40px;
+}
+
+#cv section .contenu>div p,
+#cv section .contenu>div ol li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    max-width: 48ch
+}
+
+/* section contact */
+#cv section .contenu>div ol {
+    list-style: none;
+    padding: 0
+}
+
+#cv section .contenu li {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    font-size: 16px
+}

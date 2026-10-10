@@ -1,0 +1,86 @@
+/* blog */
+.bhead,
+.chead {
+    margin: 0 14px;
+    border-radius: 36px;
+    padding: 12vh 4vw 6vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(173deg, var(--bg) 0%, var(--lav) 70%);
+}
+
+.bhead h2,
+.chead h2 {
+    margin: 0 0 20px;
+    font-size: clamp(12px, 12.5vw, 200px);
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 5vw;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 36px;
+    padding: 5vw;
+    margin-bottom: 16px
+}
+
+.frise {
+    list-style: none;
+    display: grid;
+    gap: 12px
+}
+
+.frise li {
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 14px
+}
+
+.frise time {
+    font-weight: 800;
+    color: var(--acc)
+}
+
+.shots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px
+}
+
+.shot {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bg);
+    font-size: 13px;
+    color: var(--mut)
+}
+
+.shot::before {
+    content: "● ● ●";
+    display: block;
+    padding: 6px 12px;
+    background: var(--lav);
+    color: var(--ink);
+    font-size: 10px;
+    letter-spacing: 2px
+}
+
+.shot div {
+    aspect-ratio: 4/3;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 8px
+}
+
+/* Content area below the blog header. */
+.blog-content {
+    padding-top: 6vh;
+}

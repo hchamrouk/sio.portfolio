@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" contenu="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Portfolio BTS SIO SLAM</title>
+
+    <!-- Polices utilisées par le portfolio. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;500;800&family=Gaegu:wght@400;700&display=swap">
+
+    <!-- CSS organisé par rôle pour faciliter la maintenance. -->
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/global_nav.css">
+
+    <link rel="stylesheet" href="css/p1_hero_intro.css">
+    <link rel="stylesheet" href="css/p1_cv.css">
+    <link rel="stylesheet" href="css/p1_skills.css">
+    <link rel="stylesheet" href="css/p1_projects.css">
+    <link rel="stylesheet" href="css/p2_blog.css">
+    <link rel="stylesheet" href="css/p3_contact.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- barre de nav avec menu burger (pour mobile) -->
+    <nav>
+        <!-- ancres principales -->
+        <a class="left_anchor" href="#accueil">hamza chamrouk.</a>
+        <ul class="mid_anchor">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <a class="right_anchor" href="#contact">+ Me contacter</a>
+
+        <!-- menu burger -->
+        <input type="checkbox" id="burger_menu" aria-label="Ouvrir le menu">
+        <label class="burger" for="burger_menu" aria-hidden="true">☰</label>
+        <div class="hidden_menu">
+            <small>Page principale</small>
+            <a href="#accueil">Accueil</a>
+            <a href="#cv">CV</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <small>Blog</small>
+            <a href="#veille">Veille technologique</a>
+            <a href="#glpi">Gestion de parc (GLPI)</a>
+            <small>Échanger</small>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- PAGE 1 : Accueil, CV, Compétences et Projets -->
+        <div class="page">
+            <!-- landing page -->
+            <header class="hero" id="accueil">
+                <h1>Je développe<br><b>des applis</b><br>utiles</h1>
+                <div class="infos">
+                    <span>BTS SIO · option SLAM</span>
+                    <span>Développement web, mobile et bases de données</span>
+                </div>
+            </header>
+            <!-- intro (nom, prenom, ...) -->
+            <div class="intro">
+                <div><strong>Hamza Chamrouk</strong>
+                    <p>Étudiant(e) en BTS Services Informatiques aux Organisations,
+                        spécialité Solutions Logicielles et Applications Métiers.</p>
+                </div>
+                <div class="chips">
+                    <span class="chip">Disponible pour un stage</span>
+                    <span class="chip">Nîmes</span>
+                </div>
+            </div>
+
+            <!-- CV : en anglais / français (input radio) -->
+            <!-- TODO: ne pas oublier de link les ancres aux pdf (cv fr et en) -->
+            <section id="cv">
+                <div class="label"><span>Curriculum vitæ</span><span>FR / EN</span></div>
+                <h2>Mon <em>CV</em></h2>
+                <section>
+                    <div class="lang">
+                        <label for="cv_lang_fr">
+                            <input type="radio" name="cv_lang" id="cv_lang_fr" checked>
+                            Français</label>
+                        <label for="cv_lang_en">
+                            <input type="radio" name="cv_lang" id="cv_lang_en">
+                            English</label>
+                    </div>
+
+                    <div class="contenu">
+                        <figure>
+                            <img id="pf" class="fr" src="img/pf_fr.png" alt="Autoportrait" loading="lazy">
+                            <figcaption class="fr">HAMZA CHAMROUK<br>développeur</figcaption>
+                            <img id="pf" class="en" src="img/pf_en.png" alt="Autoportrait" loading="lazy">
+                            <figcaption class="en">HAMZA CHAMROUK<br>developer</figcaption>
+                        </figure>
+                        <div class="fr">
+                            <div>
+                                <img src="img/about_fr.png" alt="A propos de moi" loading="lazy">
+                                <p>Je suis Hamza, étudiant en BTS SIO option SLAM. Passionné par le développement
+                                    et le design, je cherche un stage pour concevoir des applications utiles et
+                                    soignées.</p>
+                            </div>
+                            <div>
+                                <img src="img/education_fr.png" alt="Mes formations" loading="lazy">
+                                <p><b>2026 – 2028</b> BTS SIO option SLAM, Lycée CCI Gard, Nîmes</p>
+                                <p><b>2023 – 2024</b> Baccalauréat général, Lycée Dhuoda, Nîmes</p>
+                            </div>
+                            <div>
+                                <img src="img/experiences_fr.png" alt="Mes experiences" loading="lazy">
+                                <p>Aucune experience pour le moment.</p>
+                            </div>
+                            <div>
+                                <img src="img/contact.png" alt="Contact" loading="lazy">
+                                <ol>
+                                    <li><a href="mailto:hamzachamrouk2@gmail.com">hamzachamrouk2@gmail.com</a></li>
+                                    <li><a href="https://www.linkedin.com/in/hamza-chamrouk-528217416/"
+                                            target="_blank">Linkedin</a>
+                                        · <a href="https://github.com/hchamrouk" target="_blank">Github</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="en">
+                            <div>
+                                <img src="img/about_en.png" alt="A propos de moi" loading="lazy">
+                                <p>I am Hamza, a BTS SIO student specializing in software development.
+                                    Passionate about development and design, I am looking for an internship
+                                    to create useful and well-designed applications.</p>
+                            </div>
+                            <div>
+                                <img src="img/education_en.png" alt="Mes formations" loading="lazy">
+                                <p><b>2026 – 2028</b> BTS SIO SLAM option, Lycée CCI Gard, Nîmes</p>
+                                <p><b>2023 – 2024</b> General Baccalaureate, Lycée Dhuoda, Nîmes</p>
+                            </div>
+                            <div>
+                                <img src="img/experiences_en.png" alt="Mes experiences" loading="lazy">
+                                <p>No professional experience yet.</p>
+                            </div>
+                            <div>
+                                <img src="img/contact.png" alt="Contact" loading="lazy">
+                                <ol>
+                                    <li><a href="mailto:hamzachamrouk2@gmail.com">hamzachamrouk2@gmail.com</a></li>
+                                    <li><a href="https://www.linkedin.com/in/hamza-chamrouk-528217416/"
+                                            target="_blank">Linkedin</a>
+                                        · <a href="https://github.com/hchamrouk" target="_blank">Github</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- TODO: link les ancres aux pdf -->
+                        <div class="btns fr">
+                            <a class="btn" href="#">Téléchargez le CV en PDF</a>
+                        </div>
+                        <div class="btns en">
+                            <a class="btn" href="#">Download the CV as PDF</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- compétences -->
+            <!-- TODO: finir de clean le css à partir de là.  -->
+            <section id="competences">
+                <div class="label"><span>Savoir-faire</span><span>SIO 1 · SIO 2</span></div>
+                <h2>Compé<em>tences</em></h2>
+                <p class="lead">Le CV résume l'essentiel.
+                    Voici le détail de ce que je maîtrise, année après année.</p>
+                <section>
+                    <div class="lang">
+                        <label for="comp_lang_fr">
+                            <input type="radio" name="comp_lang" id="comp_lang_fr" checked="">
+                            Français</label>
+                        <label for="comp_lang_en">
+                            <input type="radio" name="comp_lang" id="comp_lang_en">
+                            English</label>
+                    </div>
+
+                    <div class="contenu">
+                        <div class="grille fr">
+                            <div class="boite grande">
+                                <span class="annee">SIO 1 · 2</span>
+                                <div class="numero_comp">01</div>
+                                <h3>Développement web</h3>
+                                <ul>
+                                    <li>Création de sites : HTML, CSS, JavaScript, jQuery, PHP</li>
+                                    <li>Interfaces responsives avec Bootstrap</li>
+                                    <li>Accès aux données avec le framework Laravel</li>
+                                </ul>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Bootstrap</span>
+                            </div>
+                            <div class="boite"><span class="annee">SIO 1 · 2</span>
+                                <div class="numero_comp">02</div>
+                                <h3>Programmation objet</h3>
+                                <ul>
+                                    <li>Conception de classes</li>
+                                    <li>Applications en PHP, Java, C#</li>
+                                    <li>Modèle MVC</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">SIO 1 · 2</span>
+                                <div class="numero_comp">03</div>
+                                <h3>Bases de données</h3>
+                                <ul>
+                                    <li>Modèles conceptuel, relationnel, physique</li>
+                                    <li>SQL, procédures stockées, transactions</li>
+                                    <li>SQL Server, MySQL</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">SIO 2</span>
+                                <div class="numero_comp">04</div>
+                                <h3>Mobile et services web</h3>
+                                <ul>
+                                    <li>Android sous Java, SQLite</li>
+                                    <li>Programmation de services web</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">SIO 1</span>
+                                <div class="numero_comp">05</div>
+                                <h3>Système et réseau</h3>
+                                <ul>
+                                    <li>Windows, Linux, virtualisation</li>
+                                    <li>Adressage, DNS, DHCP</li>
+                                </ul>
+                            </div>
+                            <div class="boite grande"><span class="annee">SIO 1 · 2</span>
+                                <div class="numero_comp">06</div>
+                                <h3>Organisation et cybersécurité</h3>
+                                <ul>
+                                    <li>Méthodes : Merise, UML, Scrum</li>
+                                    <li>Documentation, tests, qualité logicielle, gestion de parc avec GLPI</li>
+                                    <li>Protection des données et sécurisation des applications</li>
+                                </ul>
+                                <span class="chip">Scrum</span><span class="chip">GLPI</span><span
+                                    class="chip">RGPD</span>
+                            </div>
+                        </div>
+                        <div class="grille en">
+                            <div class="boite grande"><span class="annee">year 1 · 2</span>
+                                <div class="numero_comp">01</div>
+                                <h3>Web development</h3>
+                                <ul>
+                                    <li>Building websites: HTML, CSS, JavaScript, jQuery, PHP</li>
+                                    <li>Responsive interfaces with Bootstrap</li>
+                                    <li>Data access with the Laravel framework</li>
+                                </ul>
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Bootstrap</span>
+                            </div>
+                            <div class="boite"><span class="annee">year 1 · 2</span>
+                                <div class="numero_comp">02</div>
+                                <h3>Object-oriented programming</h3>
+                                <ul>
+                                    <li>Class design</li>
+                                    <li>Applications in PHP, Java, C#</li>
+                                    <li>MVC pattern</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">year 1 · 2</span>
+                                <div class="numero_comp">03</div>
+                                <h3>Databases</h3>
+                                <ul>
+                                    <li>Conceptual, relational and physical models</li>
+                                    <li>SQL, stored procedures, transactions</li>
+                                    <li>SQL Server, MySQL</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">year 2</span>
+                                <div class="numero_comp">04</div>
+                                <h3>Mobile and web services</h3>
+                                <ul>
+                                    <li>Android with Java, SQLite</li>
+                                    <li>Web service programming</li>
+                                </ul>
+                            </div>
+                            <div class="boite"><span class="annee">year 1</span>
+                                <div class="numero_comp">05</div>
+                                <h3>Systems and networks</h3>
+                                <ul>
+                                    <li>Windows, Linux, virtualization</li>
+                                    <li>Addressing, DNS, DHCP</li>
+                                </ul>
+                            </div>
+                            <div class="boite grande"><span class="annee">year 1 · 2</span>
+                                <div class="numero_comp">06</div>
+                                <h3>Organization and cybersecurity</h3>
+                                <ul>
+                                    <li>Methods: Merise, UML, Scrum</li>
+                                    <li>Documentation, testing, software quality, IT asset management with GLPI</li>
+                                    <li>Data protection and application security</li>
+                                </ul>
+                                <span class="chip">Scrum</span><span class="chip">GLPI</span><span
+                                    class="chip">GDPR</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- projets -->
+            <section id="projets">
+                <div class="label"><span>sélection de mes projets</span><span>01 — 09</span></div>
+                <h2>Pro<em>jets</em></h2>
+                <div class="filtre">
+                    <div>
+                        <label for="filter_all">
+                            <input type="radio" name="filtre" id="filter_all" checked>
+                            Tous</label>
+                        <label for="filter_ap">
+                            <input type="radio" name="filtre" id="filter_ap">
+                            Ateliers (AP)</label>
+                        <label for="filter_stage">
+                            <input type="radio" name="filtre" id="filter_stage">
+                            Stages</label>
+                        <label for="filter_perso">
+                            <input type="radio" name="filtre" id="filter_perso">
+                            Personnels</label>
+                    </div>
+                    <div>
+                        <label for="affichage_anneau">
+                            <input type="radio" name="display" id="affichage_anneau">
+                            Roue</label>
+                        <label for="affichage_liste">
+                            <input type="radio" name="display" id="affichage_liste" checked>
+                            Liste</label>
+                    </div>
+                </div>
+                <div class="contenu">
+                    <ul>
+                        <li class="ap">AP 0</li>
+                        <li class="ap">AP 1</li>
+                        <li class="ap">AP 2</li>
+                        <li class="ap">AP 3</li>
+                        <li class="ap">AP 4</li>
+                        <li class="stage">Stage 1</li>
+                        <li class="stage">Stage 2</li>
+                        <li class="perso">Perso</li>
+                        <li class="perso">Perso</li>
+                    </ul>
+                    <div class="texte_centre">Choisir un<br>projet</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE 2 : Blog -->
+        <div class="page">
+            <div class=" bhead" id="blog">
+                <div class="label">
+                    <span>Blog</span>
+                    <span>Veille · Parc informatique</span>
+                </div>
+                <h2>Mon<br><em>blog</em></h2>
+                <div class="btns">
+                    <a class="btn" href="#veille">Veille technologique</a>
+                    <a class="btn alt" href="#glpi">Gestion de parc (GLPI)</a>
+                </div>
+            </div>
+            <section class="blog-contenu">
+                <!-- Article de veille technologique. -->
+                <article class="post" id="veille">
+                    <div><span class="badge">Veille</span>
+                        <h2 class="post-title">Laravel</h2>
+                        <p class="lead">Suivi de l'évolution du framework PHP Laravel : versions, sécurité et bonnes
+                            pratiques.</p>
+                        <span class="chip">Feedly</span><span class="chip">Documentation officielle</span><span
+                            class="chip">Developpez.com</span><span class="chip">LinkedIn</span>
+                    </div>
+                    <ol class="frise">
+                        <li><time>Oct. 2026</time>
+                            <div>Nouveautés de la version actuelle. <a href="#">Lisez la source</a></div>
+                        </li>
+                        <li><time>Déc. 2026</time>
+                            <div>Correctif de sécurité publié. <a href="#">Lisez la source</a></div>
+                        </li>
+                        <li><time>Mars 2027</time>
+                            <div>Annonce de la prochaine version majeure. <a href="#">Lisez la source</a></div>
+                        </li>
+                        <li><time>Juin 2027</time>
+                            <div>Bilan : impact sur mes projets.</div>
+                        </li>
+                    </ol>
+                </article>
+                <!-- Article consacré à la gestion de parc informatique. -->
+                <article class="post post--full" id="glpi">
+                    <div><span class="badge">Parc informatique</span>
+                        <h2 class="post-title">GLPI</h2>
+                        <p class="lead">GLPI (Gestionnaire Libre de Parc Informatique) recense les équipements, suit les
+                            interventions techniques et contrôle les licences.</p>
+                    </div>
+                    <div class="shots">
+                        <div class="shot">
+                            <div>Capture : inventaire des équipements</div>
+                        </div>
+                        <div class="shot">
+                            <div>Capture : suivi des tickets</div>
+                        </div>
+                        <div class="shot">
+                            <div>Capture : gestion des licences</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- PAGE 3 : Contact -->
+        <div class="page">
+            <div class="chead" id="contact">
+                <div class="label">
+                    <span>Contact</span>
+                    <span>Réponse sous 48 h</span>
+                </div>
+                <h2>Parlons<br><em>stage</em></h2>
+                <div class="grille">
+                    <div>
+                        <p>
+                            Une question, une proposition de stage ou de projet ? Écrivez-moi.</p>
+                        <a href="mailto:hamzachamrouk7@gmail.com">✉ hamzachamrouk7@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/hamza-chamrouk-528217416/" target="_blank">in LinkedIn</a>
+                        <a href="https://github.com/hchamrouk" target="_blank">⌥ GitHub</a>
+                    </div>
+                    <form action="mailto:hamzachamrouk7@gmail.com" method="post" enctype="text/plain">
+                        <label>Objet
+                            <select name="objet" required>
+                                <option value="" disabled selected>Choisir l'objet du message</option>
+                                <option value="question">Question</option>
+                                <option value="projet">Proposition de projet</option>
+                                <option value="freelance">Mission freelance</option>
+                                <option value="emploi">Offre d'emploi (CDI / CDD)</option>
+                                <option value="stage">Proposition de stage</option>
+                                <option value="alternance">Proposition d'alternance</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="retour">Retour sur mon portfolio</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </label>
+                        <label>Adresse e-mail
+                            <input type="email" name="mail" placeholder="merlin@lenchenteur.fr" required></label>
+                        <label>Message
+                            <textarea name="msg" rows="5" placeholder="Bonjour ..." required></textarea></label>
+                        <button class="btn" type="submit">Envoyez le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <h2>Travaillons<br>ensemble</h2>
+        <p>© 2026 Hamza Chamrouk · Lycée CCI Gard, Nîmes · BTS SIO option SLAM</p>
+    </footer>
+</body>
+
+</html>

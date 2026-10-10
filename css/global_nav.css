@@ -1,0 +1,121 @@
+/* nav */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 4vw;
+    backdrop-filter: blur(10px) invert(1);
+    background-color: var(--bg);
+}
+
+nav a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* ancres */
+.left_anchor {
+    font-weight: 800;
+}
+
+.mid_anchor {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    background: var(--pill);
+    padding: 14px 34px;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 4px 24px #0001;
+}
+
+.right_anchor {
+    background: var(--pill);
+    padding: 12px 22px;
+    border-radius: 99px;
+    font-size: 15px;
+}
+
+/* nav (burger) */
+#burger_menu:checked~.burger {
+    background-color: var(--ink);
+    color: var(--bg)
+}
+
+.burger {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--pill);
+    cursor: pointer;
+    place-items: center;
+    font-size: 22px;
+    user-select: none;
+}
+
+/* hidden_menu caché */
+.hidden_menu {
+    display: none;
+    flex-direction: column;
+    padding: 14px;
+    height: calc(100dvh - 100% - 18px);
+
+    position: fixed;
+    top: calc(100% + 4px);
+    left: 18px;
+    right: 18px;
+    overflow-y: scroll;
+
+    border-radius: 34px;
+    box-shadow: 0 12px 40px #0004;
+    background-color: var(--pill);
+}
+
+.hidden_menu a {
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.hidden_menu a:hover,
+.hidden_menu a:focus-visible {
+    background: var(--lav);
+    text-decoration: none;
+}
+
+.hidden_menu small {
+    padding: 10px 16px 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--mut);
+}
+
+/* anchor target */
+.page {
+    display: none;
+}
+
+.page:target,
+.page:has(:target) {
+    display: block;
+}
+
+main:not(:has(.page:target, .page:has(:target))) .page:first-child {
+    display: block;
+}
+
+/* quand on change de page on pause l'animation de la page 1 */
+.page:not(:nth-of-type(1)):has(:target) #projets .contenu ul,
+.page:not(:nth-of-type(1)):has(:target) #projets .contenu ul li {
+    animation-play-state: paused;
+}
