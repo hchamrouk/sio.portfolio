@@ -62,7 +62,7 @@ nav a {
     user-select: none;
 }
 
-/* hidden_menu caché */
+/* menu caché */
 .hidden_menu {
     display: none;
     flex-direction: column;
@@ -100,22 +100,16 @@ nav a {
     color: var(--mut);
 }
 
-/* anchor target */
+/* target des ancres */
 .page {
     display: none;
 }
 
-.page:target,
 .page:has(:target) {
     display: block;
 }
 
-main:not(:has(.page:target, .page:has(:target))) .page:first-child {
-    display: block;
-}
-
-/* quand on change de page on pause l'animation de la page 1 */
-.page:not(:nth-of-type(1)):has(:target) #projets .contenu ul,
-.page:not(:nth-of-type(1)):has(:target) #projets .contenu ul li {
-    animation-play-state: paused;
+body:has(main .page:nth-of-type(2) :target) .page:nth-of-type(1),
+body:has(main .page:nth-of-type(3) :target) .page:nth-of-type(1) {
+    display: none !important;
 }
