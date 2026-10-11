@@ -186,7 +186,7 @@ footer {
 }
 
 footer h2 {
-    font-size: clamp(44px, 10vw, 150px);
+    font-size: clamp(40px, 10vw, 150px);
     margin: 0
 }
 
