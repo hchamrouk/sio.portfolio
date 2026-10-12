@@ -61,25 +61,24 @@
         grid-column: auto
     }
 
+    #projets .fiche_meta {
+        grid-template-columns: 1fr;
+    }
+
     /*  */
-
-    .blog-contenu .shots {
+    .blog_contenu .post .captures {
         grid-template-columns: 1fr
     }
 
-    .blog-contenu .post {
+    .blog_contenu .post {
         grid-template-columns: 1fr
     }
 
-    .blog-contenu ol.frise {
+    .blog_contenu .post ol.frise {
         padding: 0;
     }
 
-    #contact {
-        margin: 0;
-        padding-inline: 0;
-    }
-
+    /*  */
     #contact .grille {
         grid-template-columns: 1fr;
         padding: 0;

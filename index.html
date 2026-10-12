@@ -334,17 +334,648 @@
                             Liste</label>
                     </div>
                 </div>
+
                 <div class="contenu">
+                    <div class="fiche_cachee">
+                        <label>
+                            <input type="radio" name="input_fiche_projet" id="fermer" class="ap">
+                            x
+                        </label>
+
+                        <!-- 
+                        Fiche descriptive d’une situation professionnelle
+                        • Titre de la situation
+                        • Descriptif de la situation
+                        • Période de réalisation
+                        • Outils (logiciels, environnements, matériels, ...)
+                        • Schéma illustratif (si besoin)
+                        • Lieu (entreprise, lycée)
+                        • Cadre de réalisation (stage, ATELIER DE PROFESSIONNALISATION, projet...)
+                        • Mode de réalisation (en équipe, seul, en collaboration, ...)
+                        • Liens vers les productions réalisées
+                        • Liens vers les ressources fournies pour la réalisation de la situation
+                        (documentation, cahier des charges, ...)
+                        • Liens vers les attestations de stage
+                        • Activités associées (voir le référentiel)
+                        -->
+
+                        <div class="fiche_ap_0">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Atelier de professionnalisation</span>
+                                    <h3 class="fiche_titre">AP0 : Site portefeuille de compétences</h3>
+                                    <p class="fiche_periode">De septembre aux vacances de la Toussaint, en première
+                                        année de BTS SIO</p>
+                                </header>
+
+                                <p class="fiche_desc">
+                                    Création de mon portfolio, le site qui présente mon parcours, mon CV en français et
+                                    en anglais,
+                                    mes compétences, mes projets, mes stages, ma veille technologique et ma gestion de
+                                    parc
+                                    informatique. Il sert de support à l'épreuve E5 (support et mise à disposition de
+                                    services
+                                    informatiques) et sera complété tout au long de ma formation. Chaque situation
+                                    professionnelle y est présentée sous la forme d'une fiche descriptive.
+                                </p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Lycée CCI Gard</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Atelier de professionnalisation n°0</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                        class="chip">Validateur W3C</span><span class="chip">Git / GitHub</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <img src="img/ap0_accueil.png" alt="Page d'accueil du portfolio">
+                                        <figcaption>Page d'accueil du portfolio</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="https://hchamrouk.github.io/sio.portfolio"
+                                                target="_blank">Consulter le portfolio</a></li>
+                                        <li><a href="https://github.com/hchamrouk/sio.portfolio"
+                                                target="_blank">Consulter le code
+                                                source sur GitHub</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="pdf/Sujet_AP0.pdf" target="_blank">Télécharger le sujet de l'AP0
+                                                (PDF)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A4.1.2 — Conception ou adaptation de l'interface
+                                        utilisateur</span><span class="chip">A4.1.7 — Développement de composants
+                                        logiciels</span><span class="chip">A4.1.9 — Rédaction d'une documentation
+                                        technique</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_ap_1">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Atelier de professionnalisation</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Lycée …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Atelier de professionnalisation</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_ap_2">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Atelier de professionnalisation</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Lycée …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Atelier de professionnalisation</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_ap_3">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Atelier de professionnalisation</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Lycée …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Atelier de professionnalisation</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_ap_4">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Atelier de professionnalisation</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Lycée …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Atelier de professionnalisation</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_stage_1">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Stage</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Entreprise …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Stage</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+                                <div class="fiche_bloc">
+                                    <h4>Attestation de stage</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets" class="btn alt">Attestation de stage (PDF)</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_stage_2">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Stage</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>Entreprise …</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Stage</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+                                <div class="fiche_bloc">
+                                    <h4>Attestation de stage</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets" class="btn alt">Attestation de stage (PDF)</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_perso_1">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Projet personnel</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>…</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Projet personnel</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fiche_perso_2">
+                            <article class="fiche">
+                                <header class="fiche_entete">
+                                    <span class="chip">Projet personnel</span>
+                                    <h3 class="fiche_titre">Titre de la situation</h3>
+                                    <p class="fiche_periode">Période de réalisation (ex. : sept. 2025 – déc. 2025)</p>
+                                </header>
+
+                                <p class="fiche_desc">Descriptif de la situation : contexte, besoin, travail réalisé,
+                                    résultat obtenu.</p>
+
+                                <dl class="fiche_meta">
+                                    <div>
+                                        <dt>Lieu</dt>
+                                        <dd>…</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Cadre de réalisation</dt>
+                                        <dd>Projet personnel</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Mode de réalisation</dt>
+                                        <dd>Seul / en équipe / en collaboration</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="fiche_bloc">
+                                    <h4>Outils</h4>
+                                    <span class="chip">Logiciel</span><span class="chip">Environnement</span><span
+                                        class="chip">Matériel</span>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Schéma illustratif</h4>
+                                    <figure class="fiche_schema">
+                                        <!-- remplacer le div par : <img src="img/…" alt="…"> -->
+                                        <div class="fiche_schema_vide">Schéma à ajouter</div>
+                                        <figcaption>Légende du schéma</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Productions réalisées</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Production 1</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Ressources fournies</h4>
+                                    <ul class="fiche_liens">
+                                        <li><a href="#projets">Documentation / cahier des charges</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="fiche_bloc">
+                                    <h4>Activités associées</h4>
+                                    <span class="chip">A1.1.1 — …</span><span class="chip">A4.1.1 — …</span>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
                     <ul>
-                        <li class="ap">AP 0</li>
-                        <li class="ap">AP 1</li>
-                        <li class="ap">AP 2</li>
-                        <li class="ap">AP 3</li>
-                        <li class="ap">AP 4</li>
-                        <li class="stage">Stage 1</li>
-                        <li class="stage">Stage 2</li>
-                        <li class="perso">Perso</li>
-                        <li class="perso">Perso</li>
+                        <label>
+                            <input type="radio" name="input_fiche_projet" id="fiche_ap_0" class="ap">
+                            <p>AP 0</p>
+                        </label>
+                        <label class="ap">
+                            <input type="radio" name="input_fiche_projet" id="fiche_ap_1" class="ap">
+                            <p>AP 1</p>
+                        </label>
+                        <label class="ap">
+                            <input type="radio" name="input_fiche_projet" id="fiche_ap_2" class="ap">
+                            <p>AP 2</p>
+                        </label>
+                        <label class="ap">
+                            <input type="radio" name="input_fiche_projet" id="fiche_ap_3" class="ap">
+                            <p>AP 3</p>
+                        </label>
+                        <label class="ap">
+                            <input type="radio" name="input_fiche_projet" id="fiche_ap_4" class="ap">
+                            <p>AP 4</p>
+                        </label>
+                        <label class="stage">
+                            <input type="radio" name="input_fiche_projet" id="fiche_stage_1" class="stage">
+                            <p>Stage 1</p>
+                        </label>
+                        <label class="stage">
+                            <input type="radio" name="input_fiche_projet" id="fiche_stage_2" class="stage">
+                            <p>Stage 2</p>
+                        </label>
+                        <label class="perso">
+                            <input type="radio" name="input_fiche_projet" id="fiche_perso_1" class="perso">
+                            <p>Perso</p>
+                        </label>
+                        <label class="perso">
+                            <input type="radio" name="input_fiche_projet" id="fiche_perso_2" class="perso">
+                            <p>Perso</p>
+                        </label>
                     </ul>
                     <div class="texte_centre">Choisir un<br>projet</div>
                 </div>
@@ -353,7 +984,7 @@
 
         <!-- PAGE 2 : Blog -->
         <div class="page">
-            <div class=" bhead" id="blog">
+            <div id="blog">
                 <div class="label">
                     <span>Blog</span>
                     <span>Veille · Parc informatique</span>
@@ -364,7 +995,7 @@
                     <a class="btn alt" href="#glpi">Gestion de parc (GLPI)</a>
                 </div>
             </div>
-            <section class="blog-contenu">
+            <section class="blog_contenu">
                 <!-- Article de veille technologique. -->
                 <article class="post" id="veille">
                     <div><span class="badge">Veille</span>
@@ -396,14 +1027,14 @@
                         <p class="lead">GLPI (Gestionnaire Libre de Parc Informatique) recense les équipements, suit les
                             interventions techniques et contrôle les licences.</p>
                     </div>
-                    <div class="shots">
-                        <div class="shot">
+                    <div class="captures">
+                        <div class="capture">
                             <div>Capture : inventaire des équipements</div>
                         </div>
-                        <div class="shot">
+                        <div class="capture">
                             <div>Capture : suivi des tickets</div>
                         </div>
-                        <div class="shot">
+                        <div class="capture">
                             <div>Capture : gestion des licences</div>
                         </div>
                     </div>
@@ -413,7 +1044,7 @@
 
         <!-- PAGE 3 : Contact -->
         <div class="page">
-            <div class="chead" id="contact">
+            <div id="contact">
                 <div class="label">
                     <span>Contact</span>
                     <span>Réponse sous 48 h</span>
@@ -423,9 +1054,9 @@
                     <div>
                         <p>
                             Une question, une proposition de stage ou de projet ? Écrivez-moi.</p>
-                        <a href="mailto:hamzachamrouk7@gmail.com">✉ hamzachamrouk7@gmail.com</a>
-                        <a href="https://www.linkedin.com/in/hamza-chamrouk-528217416/" target="_blank">in LinkedIn</a>
-                        <a href="https://github.com/hchamrouk" target="_blank">⌥ GitHub</a>
+                        <a href="mailto:hamzachamrouk7@gmail.com">hamzachamrouk7@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/hamza-chamrouk-528217416/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/hchamrouk" target="_blank">GitHub</a>
                     </div>
                     <form action="mailto:hamzachamrouk7@gmail.com" method="post" enctype="text/plain">
                         <label>Objet

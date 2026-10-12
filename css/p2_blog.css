@@ -1,6 +1,6 @@
 /* blog */
-.bhead,
-.chead {
+#blog,
+#contact {
     margin: 0 14px;
     border-radius: 36px;
     padding: 12vh 4vw 6vh;
@@ -9,13 +9,18 @@
     background: linear-gradient(173deg, var(--bg) 0%, var(--lav) 70%);
 }
 
-.bhead h2,
-.chead h2 {
+#blog h2,
+#contact h2 {
     margin: 0 0 20px;
     font-size: clamp(12px, 12.5vw, 200px);
 }
 
-.post {
+.blog_content {
+    padding-top: 6vh;
+}
+
+/* post */
+.blog_contenu .post {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 5vw;
@@ -26,13 +31,14 @@
     margin-bottom: 16px
 }
 
-.frise {
+/* frise */
+.blog_contenu .post .frise {
     list-style: none;
     display: grid;
     gap: 12px
 }
 
-.frise li {
+.blog_contenu .post .frise li {
     background: var(--bg);
     border-radius: 20px;
     padding: 16px 20px;
@@ -41,19 +47,20 @@
     gap: 14px
 }
 
-.frise time {
+.blog_contenu .post .frise time {
     font-weight: 800;
     color: var(--acc)
 }
 
-.shots {
+/* captures */
+.blog_contenu .post .captures {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin-top: 16px
 }
 
-.shot {
+.blog_contenu .post .capture {
     border: 1px solid var(--line);
     border-radius: 16px;
     overflow: hidden;
@@ -62,7 +69,7 @@
     color: var(--mut)
 }
 
-.shot::before {
+.blog_contenu .post .capture::before {
     content: "● ● ●";
     display: block;
     padding: 6px 12px;
@@ -72,15 +79,10 @@
     letter-spacing: 2px
 }
 
-.shot div {
+.blog_contenu .post .capture div {
     aspect-ratio: 4/3;
     display: grid;
     place-items: center;
     text-align: center;
     padding: 8px
-}
-
-/* Content area below the blog header. */
-.blog-content {
-    padding-top: 6vh;
 }
