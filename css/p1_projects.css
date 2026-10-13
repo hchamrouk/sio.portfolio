@@ -25,9 +25,9 @@
     max-width: max-content;
 }
 
-#projets:has(#filter_ap:checked) .contenu>ul label:not(.ap),
-#projets:has(#filter_stage:checked) .contenu>ul label:not(.stage),
-#projets:has(#filter_perso:checked) .contenu>ul label:not(.perso) {
+#projets:has(#filter_ap:checked) .contenu>ul li:not(.ap),
+#projets:has(#filter_stage:checked) .contenu>ul li:not(.stage),
+#projets:has(#filter_perso:checked) .contenu>ul li:not(.perso) {
     position: absolute;
     opacity: 0 !important;
     pointer-events: none;
@@ -47,43 +47,52 @@
 #projets .contenu>ul {
     position: absolute;
     inset: 0;
+    list-style: none;
     animation: spin var(--anim-speed) linear infinite;
 }
 
-#projets .contenu>ul label {
+#projets .contenu>ul li {
     opacity: 1 !important;
     transition: opacity .2s ease;
 }
 
-#projets .contenu>ul:has(label:hover) label {
+#projets .contenu>ul:has(li:hover) li {
     opacity: .2 !important;
 }
 
-#projets .contenu>ul:has(label:hover) label:hover {
+#projets .contenu>ul:has(li:hover) li:hover {
     cursor: pointer;
     opacity: 1 !important;
     background-color: var(--ink);
     color: var(--pill);
 }
 
-#projets:has(ul label:hover) .contenu>ul,
-#projets:has(ul label:hover) .contenu>ul label {
+#projets:has(ul li:hover) .contenu>ul,
+#projets:has(ul li:hover) .contenu>ul li {
     animation-play-state: paused;
 
 }
 
 #projets:has(ul input:checked) .contenu>ul,
-#projets:has(ul input:checked) .contenu>ul label {
+#projets:has(ul input:checked) .contenu>ul li {
     animation-play-state: paused;
 }
 
-#projets .contenu>ul label:has(input:checked) {
+#projets .contenu>ul li:has(input:checked) {
     background-color: var(--ink);
     color: var(--pill);
 }
 
+#projets .contenu>ul li label {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
 /* les projets */
-#projets .contenu>ul label {
+#projets .contenu>ul li {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -92,12 +101,9 @@
     aspect-ratio: 3/4;
     margin: -10% 0 0 -7.5%;
 
-    display: grid;
-    place-items: center;
-
-    font: 800 "Inter Tight", sans-serif;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 800;
     font-style: normal;
-    text-align: center;
     background: var(--pill);
 
     transform: rotate(calc(var(--n)*40deg)) translateY(-290%) rotate(calc(var(--n)*-40deg));
@@ -136,7 +142,7 @@
     background-color: var(--pill);
 }
 
-#projets:has(#fermer:checked) .contenu label {
+#projets:has(#fermer:checked) .contenu li {
     opacity: 1;
 }
 
@@ -171,7 +177,7 @@
 }
 
 /* style des previews des projets (roue ou liste) */
-#projets:has(input:checked) .contenu label {
+#projets:has(input:checked) .contenu li {
     opacity: .2;
 }
 
@@ -203,45 +209,45 @@
     }
 }
 
-#projets .contenu>ul label:nth-child(1) {
+#projets .contenu>ul li:nth-child(1) {
     --n: 0;
 }
 
-#projets .contenu>ul label:nth-child(2) {
+#projets .contenu>ul li:nth-child(2) {
     --n: 1;
 }
 
-#projets .contenu>ul label:nth-child(3) {
+#projets .contenu>ul li:nth-child(3) {
     --n: 2;
 }
 
-#projets .contenu>ul label:nth-child(4) {
+#projets .contenu>ul li:nth-child(4) {
     --n: 3;
 }
 
-#projets .contenu>ul label:nth-child(5) {
+#projets .contenu>ul li:nth-child(5) {
     --n: 4;
 }
 
-#projets .contenu>ul label:nth-child(6) {
+#projets .contenu>ul li:nth-child(6) {
     --n: 5;
 }
 
-#projets .contenu>ul label:nth-child(7) {
+#projets .contenu>ul li:nth-child(7) {
     --n: 6;
 }
 
-#projets .contenu>ul label:nth-child(8) {
+#projets .contenu>ul li:nth-child(8) {
     --n: 7;
 }
 
-#projets .contenu>ul label:nth-child(9) {
+#projets .contenu>ul li:nth-child(9) {
     --n: 8;
 }
 
 /* l'affichage (liste) */
 #projets:has(#affichage_liste:checked) .contenu>ul,
-#projets:has(#affichage_liste:checked) .contenu>ul label {
+#projets:has(#affichage_liste:checked) .contenu>ul li {
     animation-play-state: paused;
 }
 
@@ -261,15 +267,14 @@
     flex-direction: column;
 }
 
-#projets:has(#affichage_liste:checked) .contenu>ul label {
+#projets:has(#affichage_liste:checked) .contenu>ul li {
     position: static;
     transform: none !important;
     aspect-ratio: unset;
     background-color: transparent;
     margin: 0;
+    padding: 0;
 
-    display: flex;
-    padding: 10px;
     width: 100%;
     border-bottom: 2px solid;
     font-size: 2em;
@@ -277,6 +282,11 @@
     color: var(--ink);
     border-color: var(--ink);
     transition: opacity .2s ease;
+}
+
+#projets:has(#affichage_liste:checked) .contenu>ul li label {
+    place-items: start;
+    padding: 10px;
 }
 
 #projets:has(#affichage_liste:checked) .contenu .texte_centre {

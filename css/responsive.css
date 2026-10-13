@@ -49,9 +49,6 @@
     }
 
     /*  */
-    #competences .contenu {
-        padding-inline: auto;
-    }
 
     #competences .contenu .grille {
         grid-template-columns: 1fr
