@@ -39,6 +39,9 @@
     width: min(86vw, 500px);
     aspect-ratio: 1;
     margin: 100px auto 70px;
+
+    min-height: 400px;
+    /* background-color: red; */
 }
 
 #projets .contenu>ul {
@@ -61,6 +64,17 @@
     opacity: 1 !important;
     background-color: var(--ink);
     color: var(--pill);
+}
+
+#projets:has(ul label:hover) .contenu>ul,
+#projets:has(ul label:hover) .contenu>ul label {
+    animation-play-state: paused;
+
+}
+
+#projets:has(ul input:checked) .contenu>ul,
+#projets:has(ul input:checked) .contenu>ul label {
+    animation-play-state: paused;
 }
 
 #projets .contenu>ul label:has(input:checked) {
