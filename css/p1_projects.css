@@ -420,3 +420,35 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Les nouvelles fiches reprennent le style de l’AP0. */
+#projets .fiche_schema img {
+    display: block;
+    height: auto;
+}
+
+#projets .fiche_liens a:visited {
+    color: var(--acc);
+}
+
+#projets .fiche_liens a:hover,
+#projets .fiche_liens a:focus-visible {
+    color: var(--bg);
+}
+
+#projets:has(#affichage_anneau:checked) .contenu>ul li label {
+    font-size: 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    #projets .filtre {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    #projets .contenu .fiche_cachee {
+        width: 100%;
+    }
+}
